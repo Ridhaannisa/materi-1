@@ -10,7 +10,12 @@ class Jilbab {
  	function penambahanwarna(){
  		return "Penambahan Warna dari Jilbab ini adalah warna " .$this->warna;
  	}
+
+ 	function prosespengiriman(){
+ 		return "menyesuaikan jilbab sesuai pesanan, packing jilbab dan siap dikirim ke alamat tujuan disertai ongkir";
+ 	}
 }
+
 
 class zoya extends Jilbab {
 
@@ -18,7 +23,9 @@ class zoya extends Jilbab {
 class Elzatta extends Jilbab {
 	function freeongkir(){
 		echo "Bebas Ongkir";
-
+	}
+	function prosespengiriman(){
+		return "menyesuaikan jilbab sesuai pesanan, packing jilbab dan siap dikirim ke alamat tujuan tanpa biaya ongkir";
 	}
 }
 
@@ -36,4 +43,7 @@ $Elzatta ->kategori = "instan";
 $Elzatta ->warna = "Black";
 $Elzatta ->harga = "65.000";
 
- echo $Elzatta->penambahanwarna();
+ echo "Zoya : ".$Zoya->prosespengiriman();
+ echo "<br>";
+ echo "<br>";
+ echo "Elzatta : ".$Elzatta->prosespengiriman();
