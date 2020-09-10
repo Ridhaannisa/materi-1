@@ -1,7 +1,7 @@
 <?php
 
 class Jilbab {
-	public $merk, $bahan, $kategori, $warna, $harga;
+	private $merk, $bahan, $kategori, $warna, $harga;
  	
  	public function cetakharga(){
  		return $this->harga;
