@@ -12,26 +12,28 @@ class Jilbab {
  	}
 }
 
-$Zoya = new Jilbab;
+class zoya extends Jilbab {
+
+}
+class Elzatta extends Jilbab {
+	function freeongkir(){
+		echo "Bebas Ongkir";
+
+	}
+}
+
+$Zoya = new Zoya;
 $Zoya ->merk = "Zoya";
 $Zoya ->bahan = "Polyester";
 $Zoya ->kategori = "Segi_Empat";
 $Zoya ->warna = "Grey";
 $Zoya ->harga = "69.000";
 
-$Zoya2 = new Jilbab;
-$Zoya2 ->merk = "Zoya";
-$Zoya2 ->bahan = "Polyester";
-$Zoya2 ->kategori = "Segi_Empat";
-$Zoya2 ->warna = "Grey";
-$Zoya2 ->harga = "69.000";
+$Elzatta = new Elzatta;
+$Elzatta ->merk = "Elzatta";
+$Elzatta ->bahan = "Premium Spandex";
+$Elzatta ->kategori = "instan";
+$Elzatta ->warna = "Black";
+$Elzatta ->harga = "65.000";
 
-echo "$Zoya2->bahan";
-echo "<br>";
-echo "$Zoya->bahan";
-
-if($Zoya === $Zoya2){
-	echo "sama";
-} else{
-	echo "tidak";
-}
+ echo $Elzatta->penambahanwarna();
