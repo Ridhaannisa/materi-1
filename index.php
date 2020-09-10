@@ -8,7 +8,7 @@ class Jilbab {
  	}
  	  
  	function penambahanwarna(){
- 		return "Penambahan Warna dari Jilbab ini adalah warna black, white dan cream " .$this->color;
+ 		return "Penambahan Warna dari Jilbab ini adalah warna black, white dan cream " .$this->warna;
  	}
 }
 
